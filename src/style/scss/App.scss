@@ -1,4 +1,54 @@
-.App-logo {
-  width: 10%;
-  height: 10%;
+//FONTES 
+
+@mixin font($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url($file+'.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font('Play', '../fonts/Play-Regular');
+@include font('PlayBold', '../fonts/Play-Bold');
+
+//
+$width:100%;
+
+*{
+  font-family: 'Play';
+}
+
+header{
+  width: 100%;
+  height: 70px;  
+}
+
+.header_content{
+  width: 80%;
+}
+
+.logo{
+  float: left;
+}
+.search{
+  float: left;
+  & input{
+    background-image:url(../../img/lupa.png);
+    background-repeat:no-repeat;
+    background-position: right; 
+    width: 100%;
+  }
+}
+
+.account{
+  float: left;
+}
+
+@media screen  and (max-width:500px){
+
+}
+
+@media screen  and (max-width:1000px){
+  
 }
