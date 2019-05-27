@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from './app_slide';
 
 class Appcontent extends React.Component {
 
@@ -7,7 +8,11 @@ class Appcontent extends React.Component {
 render(){
 
     return (
-       <label>Conteudo</label>
+      <div className='content'>
+          <Slide/>
+
+
+      </div>
     );
 
 }
