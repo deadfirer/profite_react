@@ -6,13 +6,15 @@
     "create-react-app": "^3.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "sass": "^1.20.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "style": "node-sass --include-path sass --watch src/style/scss/App.scss src/style/css/App.css"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -20,9 +20,11 @@ const Headers = () => (
                 <img src={user} alt='user' />
                 <label>Minha conta</label>
             </div>
-            <div className="market">
+            <div className='market'>
                 <img src={market} alt='carrinho' />
-                <span>|</span>
+            </div>
+            <div className='line-ver'></div>
+            <div className='language'>
                 <img src={bra} alt='pt-br' />
                 <img src={esp} alt='es' />
                 <img src={eng} alt='en' />
