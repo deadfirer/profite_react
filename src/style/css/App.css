@@ -2,67 +2,80 @@
   font-family: "font";
   src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
   font-family: "fontB";
   src: url("../fonts/Ubuntu-Bold.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
-
+  font-style: normal;
+}
 * {
-  font-family: 'font'; }
+  font-family: "font";
+}
 
 .content {
-  width: 100%; }
+  width: 100%;
+}
 
 header {
   width: 100%;
-  height: 70px; }
+  height: 70px;
+}
 
 .header_content {
   width: 1200px;
   margin: 0px auto;
   height: 100%;
   display: table;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .logo {
   width: 20%;
-  float: left; }
-  .logo img {
-    width: 100px; }
+  float: left;
+}
+.logo img {
+  width: 100px;
+}
 
 .search {
   width: 35%;
-  float: left; }
-  .search input {
-    background-image: url(../../img/lupa.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 400px;
-    border: none;
-    border-bottom: 0.1em solid;
-    border-bottom-color: #b0b0b0; }
+  float: left;
+}
+.search input {
+  background-image: url(../../img/lupa.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 400px;
+  border: none;
+  border-bottom: 0.1em solid;
+  border-bottom-color: #b0b0b0;
+}
 
 .account {
   float: left;
   width: 20%;
-  text-align: right; }
-  .account img {
-    width: 1.3em;
-    margin-right: 10px; }
-  .account label {
-    color: #484848;
-    font-size: 0.9em; }
+  text-align: right;
+}
+.account img {
+  width: 1.3em;
+  margin-right: 10px;
+}
+.account label {
+  color: #484848;
+  font-size: 0.9em;
+}
 
 .market {
   float: left;
   width: 5%;
-  text-align: right; }
-  .market img {
-    height: 1em;
-    margin: 0px 10px 0px 10px; }
+  text-align: right;
+}
+.market img {
+  height: 1em;
+  margin: 0px 10px 0px 10px;
+}
 
 .line-ver {
   float: left;
@@ -70,19 +83,22 @@ header {
   box-sizing: border-box;
   height: 1.5em;
   border-left: 1px solid;
-  border-left-color: #b0b0b0; }
+  border-left-color: #b0b0b0;
+}
 
 .language {
   width: 15%;
   float: right;
-  text-align: right; }
-  .language img {
-    height: 1em;
-    margin: 0px 0px 0px 10px; }
+  text-align: right;
+}
+.language img {
+  height: 1em;
+  margin: 0px 0px 0px 10px;
+}
 
 /* FOOTER */
 footer {
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
@@ -90,44 +106,53 @@ footer {
   color: white;
   text-align: center;
   border-bottom: 10px solid;
-  border-bottom-color: #2ec4b6; }
+  border-bottom-color: #2ec4b6;
+}
 
 .footerall {
   width: 1200px;
   height: 240px;
-  margin: 0px auto; }
+  margin: 0px auto;
+}
 
 .localidade {
   float: left;
   text-align: left;
   width: 35%;
-  height: 220px; }
-  .localidade .SP, .localidade .RJ {
-    float: left;
-    font-size: 0.8em;
-    margin-right: 50px; }
+  height: 220px;
+}
+.localidade .SP, .localidade .RJ {
+  float: left;
+  font-size: 0.8em;
+  margin-right: 50px;
+}
 
 .center_button {
   width: 30%;
   height: 220px;
   float: left;
   position: relative;
-  text-align: center; }
-  .center_button img {
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 15px; }
-  .center_button button {
-    background-color: #ff9f1c;
-    bottom: 0; }
+  text-align: center;
+}
+.center_button img {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.center_button button {
+  background-color: #ff9f1c;
+  bottom: 0;
+}
 
 .developer {
   width: 35%;
   height: 220px;
   float: left;
-  text-align: right; }
-  .developer img {
-    margin-top: 190px; }
+  text-align: right;
+}
+.developer img {
+  margin-top: 190px;
+}
 
 button {
   width: 200px;
@@ -152,10 +177,38 @@ button {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-radius: 4px;
-  white-space: normal; }
+  white-space: normal;
+}
 
 /*Slide*/
 .slideshow {
   width: 100%;
   height: 400px;
-  background-color: #011627; }
+  background-color: #011627;
+}
+
+.slideitens {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/* Itens */
+.itens {
+  width: 1200px;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+.itens_cols {
+  width: 200px;
+  height: 300px;
+  background-color: #484848;
+  text-align: center;
+}
+.itens_cols button {
+  background-color: #2ec4b6;
+  width: 80%;
+  height: 40px;
+}
+
+/*# sourceMappingURL=App.css.map */

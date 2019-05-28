@@ -108,7 +108,7 @@ header{
 /* FOOTER */
 
 footer {
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
@@ -208,6 +208,30 @@ button{
   background-color: $azulEsc;
 }
 
+.slideitens{
+  width: $width;
+  margin: 0px auto;
+}
+
+/* Itens */
+
+.itens{
+  width: $width;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+.itens_cols{
+  width: 200px;
+  height: 300px;
+  background-color: #484848;
+  text-align: center;
+  & button{
+    background-color: #2ec4b6;
+    width: 80%;
+    height: 40px;
+  }
+}
 
 @media screen  and (max-width:500px){
 

@@ -5,7 +5,7 @@ class Slide extends React.Component{
 
    render(){
        return(
-           <div className='slideshow'>
+           <div className='slideitens'>
 
            </div>
        );
