@@ -6,14 +6,14 @@ const Footer = () => (
             <div className='localidade'>
                 <h2>Localização</h2>
                 <div className='SP'>
-                    <p><h3>São Paulo</h3></p>
+                    <h3>São Paulo</h3>
                     <p><label>Rua do Rócio, 423/1801</label></p>
                     <p><label>Vila Olimpia - SP</label></p>
                     <p><label>04552-000</label></p>
                     <p><label>+55 11 3333 3333</label></p>
                 </div>
                 <div className='RJ'>
-                    <p><h3>Rio de Janeiro</h3></p>
+                    <h3>Rio de Janeiro</h3>
                     <p><label>Vól. da Pátria, 301/702</label></p>
                     <p><label>Botafogo - RJ</label></p>
                     <p><label>22270-000</label></p>

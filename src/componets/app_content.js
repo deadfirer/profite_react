@@ -3,6 +3,21 @@ import Slide from './app_slide';
 import Itens from './app_itens';
 
 class Appcontent extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      catalago: []
+    }
+
+  }
+  
+  componentDidMount(){
+  
+    const url = JSON.stringify(require("../data/base.json"));
+    const data = JSON.parse(url);
+    this.setState({ catalago:data.products });
+      
+  }
 
 
 
@@ -15,7 +30,7 @@ class Appcontent extends React.Component {
         </div>
         <div className='itens'>
           <h2>Produtos</h2>
-          <Itens />
+          <Itens catalago={this.state.catalago} />
         </div>
 
       </div>
