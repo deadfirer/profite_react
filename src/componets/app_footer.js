@@ -22,15 +22,15 @@ const Footer = () => (
             </div>
             <div className='center_button'>
                 <p>
-                    <button>
+                    <button className='btn'>
                         <img src={require('../img/mail.png')} alt='mail' />
                         ENTRE EM CONTATO
                 </button>
                 </p>
                 <p>
-                    <button>
-                        <img src={require('../img/phone.png')} alt='phone' />
-                        FALE COM UM NOSSO CONSULTOR ONLINE
+                    <button className='btn'>
+                        <div style={{'float':'left','width':'auto'}}><img src={require('../img/phone.png')} alt='phone' /></div>
+                        <div>FALE COM UM NOSSO CONSULTOR ONLINE</div>
                 </button>
                 </p>
             </div>
