@@ -12,171 +12,27 @@
 @include font('font', '../fonts/Ubuntu-Regular');
 @include font('fontB', '../fonts/Ubuntu-Bold');
 
+
+
 //
 $width:1200px;
 $azulEsc:#011627;
 $corLabel:#484848;
+$corLaranja:#ff9f1c;
 
 *{
   font-family: 'font';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 .content{
   width: 100%;
 }
 
-header{
-  width: 100%;
-  height: 70px;
-  
-}
-
-.header_content{
-  width: $width;
-  margin: 0px auto;
-  height: 100%;
-  display: table;
-  padding: 10px;
-}
-
-.logo{
-  width: 20%;
-  float: left;
-
-  & img {
-    width: 100px;
-  }
-}
-
-.search{
-  width: 35%;
-  float: left;
-  & input{
-    background-image:url(../../img/lupa.png);
-    background-repeat:no-repeat;
-    background-position: right; 
-    width: 400px;
-    border: none;
-    border-bottom: 0.1em solid;
-    border-bottom-color: #b0b0b0;
-  }
-}
-
-.account{
-  float: left;
-  width: 20%;
-  text-align: right;
-  & img {
-    width: 1.3em;
-    margin-right: 10px;
-  }
-  & label{
-    color: $corLabel;
-    font-size: 0.9em;
-  }
-}
-
-.market{
-  float: left;
-  width: 5%;
-  text-align: right;
-  & img{
-    height: 1em;
-    margin: 0px 10px 0px 10px;
-  }
-
-}
-
-.line-ver{
-  float: left;
-  text-align: center;
-  box-sizing: border-box;
-  height: 1.5em;
-  border-left: 1px solid;
-  border-left-color: #b0b0b0;
-}
-
-.language{
-  width: 15%;
-  float: right;
-  text-align: right;
-  & img{
-    height: 1em;
-    margin: 0px 0px 0px 10px;
-  }
-
-}
-
-/* FOOTER */
-
-footer {
-  /*position: fixed;*/
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: $azulEsc;
-  color: white;
-  text-align: center;
-  border-bottom: 10px solid;
-  border-bottom-color: #2ec4b6;
-
-}
-
-$hfoo:220px;
-
-.footerall{
-  width: $width;
-  height: $hfoo + 20;
-  margin: 0px auto;
-}
-
-.localidade{
-  float: left;
-  text-align: left;
-  width: 35%;
-  height: $hfoo;
-
-& .SP, .RJ{
-  float: left;
-  font-size: 0.8em;
-  margin-right: 50px;
-}
-
-}
-
-
-.center_button{
-  width: 30%;
-  height: $hfoo;
-  float: left;
-  position: relative;
-  text-align: center;
-
-  & img{
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 15px;
-  }
-  & button{
-    background-color: #ff9f1c;
-    bottom: 0;
-  }
-
-}
-
-
-.developer{
-  width: 35%;
-  height: $hfoo;
-  float: left;
-  text-align: right; 
-
-  & img {
-    margin-top: $hfoo - 30;
-  }
-}
-
-button{
+.btn{
   width: 200px;
   height: 50px;
   color: #fff;
@@ -202,77 +58,162 @@ button{
   white-space:normal;
 }
 
-
-/*Slide*/
-.slideshow{
-  width: 100%;
-  height: 400px;
-  background-color: $azulEsc;
+hr {
+  margin-top: 10px;
+  background-color: $corLaranja;
+  border: none;
+  width: 50px;
+  height: 6px;
 }
 
-.slideitens{
-  width: $width;
-  margin: 0px auto;
-}
+@import 'header','slide','footer';
 
-/* Itens */
 
-.itens{
-  width: $width;
-  height: 500px;
-  padding: 30px;
-  margin: 0px auto;
-}
-
-.itens_cols{
-  width: 200px;
-  height: 400px;
-  margin-left: 20px;
-  float: left;
-  background-color: #fff;
-  text-align: center;
-  & button{
-    background-color: #2ec4b6;
-    width: 80%;
-    height: 40px;
+@media screen and (max-width: 1200px){
+  header .control-nav {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #333;
+    border-width: 3px 0;
+    z-index: 2;
+    cursor: pointer;
   }
-  & img{
+
+  header .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #333;
+  }
+
+  header .control-nav-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    border-left: 1px solid #ccc;
+    background: #fff;
+    overflow-x: auto;
+    z-index: 2;
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
+  }
+
+  .logo{
+    width: 100%;
+    text-align: center;
+  }
+  .language, .account{
+    display: none;
+  }
+
+.search{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  & input{
     width: 90%;
   }
-  &:hover{
-    background-color: #204a5f17;
+  
+}
+
+.market{
+  position: absolute;
+  right: 0;
+}
+
+
+.itens,.content,.slider-itens{width: 100%; & .itens{margin-left: 20px;}}
+.conteiner-prod { max-width: 80%; }
+.location,.footerall{ 
+  width: 100%;
+  margin-left: 20px;
+}
+.footerall{
+  height: 450px;
+}
+$wit:90%;
+.address{
+  width: 90%;
+  margin-left: (($wit - 45)/2);
+}
+.center-button{
+  width: 90%;
+  float: left;
+  height: 150px;
+}
+.developer{
+  width: 90%;
+  height: 70px;
+  text-align: center;
+  & img{
+    margin-top: 30px;
   }
-  & label{
-    color: $corLabel;
-    font-size: 0.9em;
+}
+
+.slideitens,.slideitens-b {
+  width: 100%;
+  height: 90%;
+}
+
+.seta-slide{
+  width: 30px;
+  height: 100%;
+}
+
+.slide-imp{
+  display: none;
+}
+.slide-par{
+  width: 100%;
+}
+.conteiner-slide{
+  width: $wit;
+  & img{
+    margin-left: 20px; 
+    margin-top: 50px;
+    min-width: 50%;
   }
-  & p{
-    margin: 0;
+}
+
+}
+
+
+@media screen and (min-width: 1200px){
+  .nav-itens{
+    display: none;
   }
-}
+  
+  .header-content{
+    position: relative;
+    width: $width;
+    margin: 0px auto;
+    min-height: 60px;
+    & hr{
+      width: 2px;
+      height: 30px !important;
+      background-color: #b0b0b0;
+    }
 
-.stars {
-  width: 100px !important;
-}
+  }
 
-.priceIni{
-  font-size: 0.7em !important;
-  text-decoration: line-through;
-}
-
-.parclb{
-  font-size: 0.7em !important;
-}
-
-.priceTot{
-  font-size: 1.3em !important;
-  color: #2ec4b6 !important; 
-}
-
-@media screen  and (max-width:500px){
-
-}
-
-@media screen  and (max-width:1000px){
   
 }
