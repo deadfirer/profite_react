@@ -1,8 +1,4 @@
-# Profite Projeto
-
-Prazo para entrega 30/05/2019
-
-Desenvolvido por Alexandre Faustino.
+# Profite Projeto (Desafio Técnico)
 
 # Técnologias ultilizadas:
 *HTML 5
