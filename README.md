@@ -1,11 +1,12 @@
 # Profite Projeto (Desafio Técnico)
 
-# Técnologias ultilizadas:
-*HTML 5
-*JAVASCRIPT (ES6)
-*CSS 
-*SASS
-*REACT
+### Built With
+
+![](https://img.shields.io/badge/Platform-Node.Js-blue?style=flat&logo=node-dot-js&logoColor=white&color=66d63a)
+![](https://img.shields.io/badge/Platform-Yarn-blue?style=flat&logo=yarn&logoColor=white&color=2b9fbc)
+![](https://img.shields.io/badge/Code-ReactJS-blue?style=flat&logo=react&logoColor=white&color=2b9fbc)
+![](https://img.shields.io/badge/Code-JavaScript-blue?style=flat&logo=javascript&logoColor=white&color=2b9fbc)
+![](https://img.shields.io/badge/Code-CSS3-blue?style=flat&logo=css3&logoColor=white&color=2b9fbc)
 
 ###Iniciando o Sistema
 
